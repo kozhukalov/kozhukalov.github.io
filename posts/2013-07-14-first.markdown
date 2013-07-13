@@ -1,5 +1,0 @@
----
-title: First
-summary: My first post in my Hakyll blog
----
-This blog is static generated with [Hakyll](http://jaspervdj.be/hakyll/). I think Hakyll is a great blog engine. It uses Pandoc as its format converting engine. I am planning to write posts here about my engineering and scientific activities.
