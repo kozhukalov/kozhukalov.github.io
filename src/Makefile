@@ -14,5 +14,7 @@ clean: clean-cache clean-site clean-bin
 build: clean
 	ghc --make site.hs
 	./site build
+
+pub:
 	cp -r ./_site/* ../
 
