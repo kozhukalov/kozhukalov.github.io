@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend, mconcat)
-import           Hakyll
+import Data.Monoid (mappend, mconcat)
+import Hakyll
 
 
 --------------------------------------------------------------------------------
@@ -14,7 +14,7 @@ main = hakyll $ do
     match "posts/*" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/post.html" postCtx
             >>= loadAndApplyTemplate "templates/base.html" postCtx
 
     match "templates/index.html" $ do
