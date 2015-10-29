@@ -1,3 +1,5 @@
+.PHONY: clean-cache clean-site clean-bin clean build pub
+
 clean-cache:
 	rm -rf _cache
 
@@ -11,10 +13,9 @@ clean-bin:
 
 clean: clean-cache clean-site clean-bin
 
-build: clean
+build: clean-cache clean-site
 	ghc --make site.hs
 	./site build
 
-pub:
+pub: | build
 	cp -r ./_site/* ../
-

@@ -21,7 +21,7 @@ main = hakyll $ do
         route $ constRoute "index.html"
         compile $ do
             let indexCtx = field "posts" $ \_ ->
-                                postList $ fmap (take 3) . recentFirst
+                                postList $ fmap (take 20) . recentFirst
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
@@ -45,5 +45,3 @@ postList sortFilter = do
     itemTpl <- loadBody "templates/post-item.html"
     list    <- applyTemplateList itemTpl postCtx posts
     return list
-
-

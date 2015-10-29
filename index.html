@@ -3,67 +3,115 @@
 "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <!-- From bootstrap/doc/examples -->
+    <link href="/static/css/jumbotron-narrow.css" rel="stylesheet">
+    <!-- My styles -->
+    <link href="/static/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Source code syntax highlighting -->
     <link rel="stylesheet" href="/static/highlight.js/styles/default.css"/>
     <script src="/static/highlight.js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+    <!-- Blog icon -->
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico"/>
 
-    <link rel="stylesheet" href="/static/css/main.css" />
-    <title>Vladimir Kozhukalov</title>
+    <!-- Custom css -->
+    <!-- <link rel="stylesheet" href="/static/css/main.css" /> -->
+
+    <!-- Blog title -->
+    <title>Kozhukalov's blog</title>
   </head>
+
   <body>
-    <div class="wrap">
+    <div class="container">
       <div class="header">
-        <div class="header-left">
-          <div class="header-title">Vladimir Kozhukalov</div>
-        </div>
-        <div class="header-right">
-          <a href="/"><div class="header-locator">HOME</div></a>
-        </div>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="my-header-link"><a href="/">HOME</a></li>
+            <li class="my-header-link"><a href="/notes">NOTES</a></li>
+          </ul>
+        </nav>
+        <span class="my-header-title">Just blog</span>
       </div>
-      <div class="content">
-        <div class="article-list">
-  <hr/>
-<div class="article-title">
+
+      <div class="jumbotron my-content">
+        <div class="my-article-list">
+  <hr class="my-hr" />
+<div class="my-article-title">
   <a href="/posts/2014-11-12-what_is_ros.html">What is ROS?</a>
 </div>
-<div class="article-date">
+<div class="my-article-date">
   November 12, 2014
 </div>
-<div class="article-summary">
+<div class="my-article-summary">
   ROS is a quite new initiative about robotics. It is Robot Operating System. Actually it is not an operating system in a sense we usually think of that. Currently, it is just a bunch of robotics related software projects which are developed by various contributors both individuals and organizations. Most of those projects are open source, so anyone can take part in developing ROS.
 </div>
-<hr/>
-<div class="article-title">
+<hr class="my-hr" />
+<div class="my-article-title">
   <a href="/posts/2013-12-01-test_image.html">Post with image</a>
 </div>
-<div class="article-date">
+<div class="my-article-date">
   December  1, 2013
 </div>
-<div class="article-summary">
+<div class="my-article-summary">
   Test post with image.
 </div>
-<hr/>
-<div class="article-title">
+<hr class="my-hr" />
+<div class="my-article-title">
   <a href="/posts/2013-07-15-dwave_quantum_computer.html">D-Wave is the first quantum computer vendor</a>
 </div>
-<div class="article-date">
+<div class="my-article-date">
   July 15, 2013
 </div>
-<div class="article-summary">
-  D-Wave Systems is the first company world wide who builds and sells quantum computers. The first quantum computer was bought by Lockheed Martin aerospace advanced technology company. D-Wave claimed their computer uses so called ['simulated annealing'](http://www.nature.com/nature/journal/v473/n7346/full/nature10012.html).
+<div class="my-article-summary">
+  D-Wave Systems is the first company world wide who builds and sells quantum computers. The first quantum computer was bought by Lockheed Martin aerospace advanced technology company. D-Wave claimed their computer uses so called a kind of quantum version of 'Simulated annealing' algorithm.
+</div>
+<hr class="my-hr" />
+<div class="my-article-title">
+  <a href="/posts/2013-07-14-abc_hypothesis.html">Shinichi Mochizuki proved ABC-hypothesis</a>
+</div>
+<div class="my-article-date">
+  July 14, 2013
+</div>
+<div class="my-article-summary">
+  At the late August 2012 Shinichi Mochizuki published series of four papers where he claimed that he proved ABC-hypothesis. His papers are so complicated that extreamly small number of people around the world who supposed to be able to understand his work. But at the same time if his proof is correct it could be the most important mathematical achivement since 1993 when the Fermat's Last Theorem was proved.
+</div>
+<hr class="my-hr" />
+<div class="my-article-title">
+  <a href="/posts/2000-01-01-first.html">First</a>
+</div>
+<div class="my-article-date">
+  January  1, 2000
+</div>
+<div class="my-article-summary">
+  My first post in my Hakyll blog
 </div>
 
 </div>
 
       </div>
-      <div class="footer">
-        <p>(C) Vladimir Kozhukalov's Blog</p>
-      </div>
-    </div>
+    </div> <!-- container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
   </body>
 </html>
